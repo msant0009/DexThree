@@ -9,6 +9,7 @@ import CoreData
 
 struct PersistenceController {
     static let shared = PersistenceController()
+    let container: NSPersistentContainer
 
     @MainActor
     static let preview: PersistenceController = {
@@ -29,7 +30,7 @@ struct PersistenceController {
         return result
     }()
 
-    let container: NSPersistentContainer
+    
 
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "DexThree")
