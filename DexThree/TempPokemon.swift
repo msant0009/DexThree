@@ -11,12 +11,12 @@ struct TempPokemon: Codable {
     let id: Int
     let name: String
     let types: [String]
-    var hp: Int
-    var attack: Int
-    var defense: Int
-    var specialAttack: Int
-    var specialDefense: Int
-    var speed: Int
+    var hp = 0
+    var attack = 0
+    var defense = 0
+    var specialAttack = 0
+    var specialDefense = 0
+    var speed = 0
     let sprite: URL
     let shiny: URL
     
@@ -97,8 +97,10 @@ struct TempPokemon: Codable {
 
         }
         
+        let spriteContainer = try container.nestedContainer(keyedBy: PokemonKeys.SpriteKeys.self, forKey: .sprites)
+        sprite = try spriteContainer.decode(URL.self, forKey: .sprite)
+        shiny = try spriteContainer.decode(URL.self, forKey: .shiny)
         
-            
     }
         
 }
