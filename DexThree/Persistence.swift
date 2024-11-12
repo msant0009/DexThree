@@ -46,10 +46,11 @@ struct PersistenceController {
 
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
-        } else {
+        }
+        /*else {
             container.persistentStoreDescriptions.first!.url = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.marksantoro.DexThree")!.appending(path: "DexThree.sqlite")
         }
-
+*/
 
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {

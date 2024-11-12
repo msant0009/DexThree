@@ -6,19 +6,94 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A39F1CFF2CE3D8D700D5CAF0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39F1CFE2CE3D8D700D5CAF0 /* WidgetKit.framework */; };
+		A39F1D012CE3D8D700D5CAF0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39F1D002CE3D8D700D5CAF0 /* SwiftUI.framework */; };
+		A39F1D0C2CE3D8D800D5CAF0 /* DexThreeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A39F1CFC2CE3D8D700D5CAF0 /* DexThreeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A39F1D0A2CE3D8D800D5CAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3AF00422CE3B6620021F483 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A39F1CFB2CE3D8D700D5CAF0;
+			remoteInfo = DexThreeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A39F1D0D2CE3D8D800D5CAF0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A39F1D0C2CE3D8D800D5CAF0 /* DexThreeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A39F1CFC2CE3D8D700D5CAF0 /* DexThreeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DexThreeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39F1CFE2CE3D8D700D5CAF0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A39F1D002CE3D8D700D5CAF0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A3AF004A2CE3B6620021F483 /* DexThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DexThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A39F1D102CE3D8D800D5CAF0 /* Exceptions for "DexThreeWidget" folder in "DexThreeWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A39F1CFB2CE3D8D700D5CAF0 /* DexThreeWidgetExtension */;
+		};
+		A39F1D132CE3D96800D5CAF0 /* Exceptions for "DexThree" folder in "DexThreeWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				DexThree.xcdatamodeld,
+				FetchedImage.swift,
+				Persistence.swift,
+				SamplePokemon.swift,
+				WidgetPokemon.swift,
+			);
+			target = A39F1CFB2CE3D8D700D5CAF0 /* DexThreeWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A39F1D022CE3D8D700D5CAF0 /* DexThreeWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A39F1D102CE3D8D800D5CAF0 /* Exceptions for "DexThreeWidget" folder in "DexThreeWidgetExtension" target */,
+			);
+			path = DexThreeWidget;
+			sourceTree = "<group>";
+		};
 		A3AF004C2CE3B6620021F483 /* DexThree */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A39F1D132CE3D96800D5CAF0 /* Exceptions for "DexThree" folder in "DexThreeWidgetExtension" target */,
+			);
 			path = DexThree;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A39F1CF92CE3D8D700D5CAF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39F1D012CE3D8D700D5CAF0 /* SwiftUI.framework in Frameworks */,
+				A39F1CFF2CE3D8D700D5CAF0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3AF00472CE3B6620021F483 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +104,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A39F1CFD2CE3D8D700D5CAF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A39F1CFE2CE3D8D700D5CAF0 /* WidgetKit.framework */,
+				A39F1D002CE3D8D700D5CAF0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3AF00412CE3B6620021F483 = {
 			isa = PBXGroup;
 			children = (
 				A3AF004C2CE3B6620021F483 /* DexThree */,
+				A39F1D022CE3D8D700D5CAF0 /* DexThreeWidget */,
+				A39F1CFD2CE3D8D700D5CAF0 /* Frameworks */,
 				A3AF004B2CE3B6620021F483 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				A3AF004A2CE3B6620021F483 /* DexThree.app */,
+				A39F1CFC2CE3D8D700D5CAF0 /* DexThreeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +135,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A39F1CFB2CE3D8D700D5CAF0 /* DexThreeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39F1D112CE3D8D800D5CAF0 /* Build configuration list for PBXNativeTarget "DexThreeWidgetExtension" */;
+			buildPhases = (
+				A39F1CF82CE3D8D700D5CAF0 /* Sources */,
+				A39F1CF92CE3D8D700D5CAF0 /* Frameworks */,
+				A39F1CFA2CE3D8D700D5CAF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A39F1D022CE3D8D700D5CAF0 /* DexThreeWidget */,
+			);
+			name = DexThreeWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = DexThreeWidgetExtension;
+			productReference = A39F1CFC2CE3D8D700D5CAF0 /* DexThreeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		A3AF00492CE3B6620021F483 /* DexThree */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3AF005D2CE3B6630021F483 /* Build configuration list for PBXNativeTarget "DexThree" */;
@@ -55,10 +164,12 @@
 				A3AF00462CE3B6620021F483 /* Sources */,
 				A3AF00472CE3B6620021F483 /* Frameworks */,
 				A3AF00482CE3B6620021F483 /* Resources */,
+				A39F1D0D2CE3D8D800D5CAF0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A39F1D0B2CE3D8D800D5CAF0 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A3AF004C2CE3B6620021F483 /* DexThree */,
@@ -80,6 +191,9 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					A39F1CFB2CE3D8D700D5CAF0 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					A3AF00492CE3B6620021F483 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -100,11 +214,19 @@
 			projectRoot = "";
 			targets = (
 				A3AF00492CE3B6620021F483 /* DexThree */,
+				A39F1CFB2CE3D8D700D5CAF0 /* DexThreeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A39F1CFA2CE3D8D700D5CAF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3AF00482CE3B6620021F483 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +237,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A39F1CF82CE3D8D700D5CAF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3AF00462CE3B6620021F483 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +253,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A39F1D0B2CE3D8D800D5CAF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A39F1CFB2CE3D8D700D5CAF0 /* DexThreeWidgetExtension */;
+			targetProxy = A39F1D0A2CE3D8D800D5CAF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A39F1D0E2CE3D8D800D5CAF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 699GP28SCL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DexThreeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DexThreeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksantoro.DexThree.DexThreeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A39F1D0F2CE3D8D800D5CAF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 699GP28SCL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DexThreeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DexThreeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marksantoro.DexThree.DexThreeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A3AF005B2CE3B6630021F483 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +496,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A39F1D112CE3D8D800D5CAF0 /* Build configuration list for PBXNativeTarget "DexThreeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39F1D0E2CE3D8D800D5CAF0 /* Debug */,
+				A39F1D0F2CE3D8D800D5CAF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3AF00452CE3B6620021F483 /* Build configuration list for PBXProject "DexThree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
